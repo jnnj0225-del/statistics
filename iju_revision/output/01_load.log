@@ -1,0 +1,25 @@
+N = 192 
+Male n(%): 145 75.5 
+IMDC intermediate n(%): 134 69.8 
+median age (range): 70 36 87 
+dNLR_MLR_4grp table:
+
+ 0  1  2  3 
+66 68 15 43 
+death n(%): 61 31.8 
+median followup: 20 
+
+ALC summary:
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.070   0.835   1.262   1.314   1.700   3.500 
+ANC summary:
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.768   3.238   4.090   4.454   5.446  16.846 
+ANC_group table:
+
+   0    1 <NA> 
+ 173   19    0 
+CRP summary:
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   0.10    1.40    8.56   29.93   35.25  253.10 
+missing ALC: 0  missing ANC: 0  missing CRP: 0 

@@ -1,0 +1,25 @@
+=========== R3-4: cutoff sensitivity, 18-month vs 24-month OS ===========
+
+NLR    24mo: cutoff=2.500 AUC=0.629 (reported 2.50/0.629)   |   18mo: cutoff=2.500 AUC=0.614
+dNLR   24mo: cutoff=2.289 AUC=0.678 (reported 2.29/0.680)   |   18mo: cutoff=2.289 AUC=0.662
+MLR    24mo: cutoff=0.377 AUC=0.648 (reported 0.38/0.646)   |   18mo: cutoff=0.377 AUC=0.629
+CRP    24mo: cutoff=4.000 AUC=0.728 (reported 4.00/0.730)   |   18mo: cutoff=4.000 AUC=0.720
+
+--- classification agreement: dNLR+MLR 4-group using 18mo-derived cutoffs vs original (24mo) 4-group ---
+18mo cutoffs: dNLR= 2.289474  MLR= 0.376914 
+agreement table (18mo-based marker-high vs 24mo-based marker-high):
+   
+      0   1
+  0  81   0
+  1   0 111
+simple agreement: 1 
+
+4-group table using 18mo cutoffs:
+
+1.0 2.0 1.1 2.1 
+ 66  15  68  43 
+HRs, 18mo-cutoff classification (OS):
+           exp(coef) exp(-coef) lower .95 upper .95
+grp4_182.0  2.327877  0.4295760 0.7003078  7.738042
+grp4_181.1  3.891865  0.2569462 1.7428330  8.690802
+grp4_182.1  7.412554  0.1349063 3.3314243 16.493235

@@ -1,0 +1,88 @@
+=========== R2-2: ALC analysis ===========
+
+--- (1) ALC cutoff via time-dependent ROC (24mo OS), Youden ---
+Derived cutoff=2.400  sens=0.093 spec=0.968 AUC=0.435
+median ALC (literature-style cutoff): 1.262 
+n below/above derived cutoff: 183 9 
+n below/above 1.0 (Takemura-style, x10^3/uL): 64 128 
+n below/above median (Ueda-style): 96 96 
+
+--- (2) Correlation: ALC vs dNLR, ALC vs MLR (Spearman) ---
+
+	Spearman's rank correlation rho
+
+data:  d$ALC and d$dNLR
+S = 1697210, p-value = 1.94e-10
+alternative hypothesis: true rho is not equal to 0
+sample estimates:
+       rho 
+-0.4387814 
+
+Warning message:
+In cor.test.default(d$ALC, d$dNLR, method = "spearman") :
+  Cannot compute exact p-value with ties
+
+	Spearman's rank correlation rho
+
+data:  d$ALC and d$MLR
+S = 1758894, p-value = 4.772e-13
+alternative hypothesis: true rho is not equal to 0
+sample estimates:
+      rho 
+-0.491073 
+
+Warning message:
+In cor.test.default(d$ALC, d$MLR, method = "spearman") :
+  Cannot compute exact p-value with ties
+
+--- (3) Univariate Cox: ALC-low vs ALC-high, OS ---
+                 exp(coef) exp(-coef) lower .95 upper .95
+factor(ALC_low)1 0.8687562   1.151071 0.2715662  2.779202
+                       coef exp(coef)  se(coef)          z  Pr(>|z|)
+factor(ALC_low)1 -0.1406927 0.8687562 0.5933051 -0.2371339 0.8125529
+
+--- (4) Multivariable: IMDC + ALC, OS ---
+                 exp(coef) exp(-coef) lower .95 upper .95
+IMDC_f2           2.539476  0.3937821  1.530464  4.213712
+factor(ALC_low)1  0.721909  1.3852162  0.224135  2.325172
+                       coef exp(coef)  se(coef)          z     Pr(>|z|)
+IMDC_f2           0.9319576  2.539476 0.2583651  3.6071337 0.0003095981
+factor(ALC_low)1 -0.3258562  0.721909 0.5967713 -0.5460319 0.5850439804
+
+--- (5) Decisive test: does dNLR/MLR remain significant adjusting for ALC? ---
+                 exp(coef) exp(-coef)  lower .95 upper .95
+grp4IH           4.4738644  0.2235204 1.93850570 10.325202
+grp4PL           2.4395264  0.4099156 0.73198187  8.130378
+grp4PH           8.6896099  0.1150800 3.73911692 20.194426
+factor(ALC_low)1 0.3273824  3.0545323 0.09457215  1.133306
+                       coef exp(coef)  se(coef)         z     Pr(>|z|)
+grp4IH            1.4982526 4.4738644 0.4267094  3.511177 4.461265e-04
+grp4PL            0.8918039 2.4395264 0.6141967  1.451984 1.465060e-01
+grp4PH            2.1621280 8.6896099 0.4302521  5.025259 5.027541e-07
+factor(ALC_low)1 -1.1166265 0.3273824 0.6335656 -1.762448 7.799363e-02
+also: IMDC + dNLR_ge + MLR_ge + ALC_low jointly (not the 4-group combo, individual terms)
+                 exp(coef) exp(-coef) lower .95 upper .95
+IMDC_f2          1.9658986  0.5086732 1.1622536  3.325227
+factor(dNLR_ge)1 1.6603034  0.6022996 0.9228515  2.987054
+factor(MLR_ge)1  2.1078589  0.4744150 1.1154640  3.983158
+factor(ALC_low)1 0.4010384  2.4935267 0.1165694  1.379708
+                       coef exp(coef)  se(coef)         z   Pr(>|z|)
+IMDC_f2           0.6759495 1.9658986 0.2681624  2.520672 0.01171309
+factor(dNLR_ge)1  0.5070003 1.6603034 0.2996419  1.692021 0.09064199
+factor(MLR_ge)1   0.7456727 2.1078589 0.3247010  2.296490 0.02164786
+factor(ALC_low)1 -0.9136981 0.4010384 0.6304045 -1.449384 0.14723044
+
+--- (6) sensitivity: alternative ALC cutoffs (median, 1.0) in the same multivariable model ---
+-- ALC_low_median --
+                        exp(coef) exp(-coef) lower .95 upper .95
+IMDC_f2                  2.309138  0.4330620  1.388788  3.839405
+factor(ALC_low_median)1  1.813365  0.5514608  1.075267  3.058118
+-- ALC_low_1000 --
+                      exp(coef) exp(-coef) lower .95 upper .95
+IMDC_f2                2.348804  0.4257486 1.4119394  3.907307
+factor(ALC_low_1000)1  1.609237  0.6214126 0.9623592  2.690932
+
+--- (7) C-index: IMDC+ALC, bootstrap B=1000 ---
+Error in X[, mmcolnames, drop = FALSE] : subscript out of bounds
+Calls: cph
+Execution halted

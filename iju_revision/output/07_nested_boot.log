@@ -1,0 +1,61 @@
+=========== R1-2 / R3-3: fully nested bootstrap (cutoffs + marker selection + model selection re-done in each resample) ===========
+
+Original-data pipeline selected: dNLR_MLR  apparent C= 0.7182 
+Original cutoffs:
+$NLR
+[1] 2.5
+
+$dNLR
+[1] 2.289474
+
+$MLR
+[1] 0.376914
+
+$PLR
+[1] 168.75
+
+$SII
+[1] 634.518
+
+$SIRI
+[1] 1.576328
+
+$PIV
+[1] 477.225
+
+$CRP
+[1] 4
+
+  ... 100 / 1000  elapsed: 301.7 s
+  ... 200 / 1000  elapsed: 601 s
+  ... 300 / 1000  elapsed: 904.7 s
+  ... 400 / 1000  elapsed: 1210.5 s
+  ... 500 / 1000  elapsed: 1520.9 s
+  ... 600 / 1000  elapsed: 1810 s
+  ... 700 / 1000  elapsed: 2103.2 s
+  ... 800 / 1000  elapsed: 2407.9 s
+  ... 900 / 1000  elapsed: 2730.1 s
+  ... 1000 / 1000  elapsed: 3040.2 s
+There were 50 or more warnings (use warnings() to see the first 50)
+
+failed resamples: 0 of 1000 
+
+Selection frequency across resamples:
+selected
+      CRP      dNLR  dNLR_MLR IMDC_only       MLR       NLR   NLR_MLR       PIV 
+      339        86       413         2        83        23        33         6 
+      PLR      SIRI 
+        3        12 
+
+mean optimism (train - test): 0.0385  (n= 1000 )
+Apparent C-index of originally-selected model (dNLR-MLR) on full data: 0.7182 
+NESTED optimism-corrected C-index: 0.6797 
+
+(for comparison, naive single-model bootstrap optimism-corrected C reported earlier: 0.705-0.711)
+
+95% CI of test_c (out-of-resample performance of resample-selected pipeline, evaluated on full data):
+     2.5%       50%     97.5% 
+0.6308534 0.6867102 0.7181641 
+
+saved nested_boot_result.rds
+rds

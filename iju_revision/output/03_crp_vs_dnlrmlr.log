@@ -1,0 +1,16 @@
+=========== R2-4 / R3-6: IMDC-dNLR-MLR vs IMDC-CRP, paired bootstrap C-index difference ===========
+
+grp4_crp table:
+
+1.0 2.0 1.1 2.1 
+ 73   7  61  51 
+Apparent C: IMDC-dNLR-MLR=0.7182  IMDC-CRP=0.6954  diff=0.0228
+There were 50 or more warnings (use warnings() to see the first 50)
+
+Optimism-corrected C: IMDC-dNLR-MLR=0.7105  IMDC-CRP=0.6805
+Bootstrap 95% CI, apparent C IMDC-dNLR-MLR: 0.6513 - 0.7716
+Bootstrap 95% CI, apparent C IMDC-CRP: 0.6231 - 0.7377
+
+Paired difference (dNLR-MLR minus CRP), out-of-resample evaluated each time:
+  mean diff=0.0254  95% CI: 0.0065 to 0.0687
+failed resamples: 0 of 1000 

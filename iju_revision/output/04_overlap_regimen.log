@@ -1,0 +1,51 @@
+=========== R1-1: dNLR-high vs MLR-high overlap ===========
+         MLR_high
+dNLR_high  0  1
+        0 81 38
+        1 21 52
+
+neither=81 (42.2%)  dNLR-only=21 (10.9%)  MLR-only=38 (19.8%)  both=52 (27.1%)
+Jaccard overlap (both / union): 0.4684685 
+Cohen's kappa:
+kappa = 0.376074 
+
+
+=========== R3-5: dNLR-high vs IMDC neutrophilia criterion overlap ===========
+         IMDC_neutrophilia
+dNLR_high   0   1
+        0 116   3
+        1  57  16
+
+% of dNLR-high patients who ALSO meet IMDC neutrophilia criterion:
+16 / 73 = 21.9%
+
+% of IMDC-neutrophilia patients who are ALSO dNLR-high:
+16 / 19 = 84.2%
+simple agreement: 0.6875  Cohen kappa: 0.2263264 
+Spearman ANC (continuous) vs dNLR (continuous):
+
+	Spearman's rank correlation rho
+
+data:  d$ANC and d$dNLR
+S = 413640, p-value < 2.2e-16
+alternative hypothesis: true rho is not equal to 0
+sample estimates:
+      rho 
+0.6493436 
+
+Warning message:
+In cor.test.default(d$ANC, d$dNLR, method = "spearman") :
+  Cannot compute exact p-value with ties
+
+
+=========== R2-3: regimen-stratified C-index refresh ===========
+ICI-ICI    n=104 events= 35 | apparent C=0.721  corrected C=0.705  corrected slope=0.832
+Singularity in coxph.fit. Coefficients:
+     1      2      3 
+0.9994     NA 1.4302 
+Singularity in coxph.fit. Coefficients:
+    1     2     3 
+2.923    NA 3.019 
+
+Divergence or singularity in 2 samples
+ICI-TKI    n= 88 events= 26 | apparent C=0.714  corrected C=0.688  corrected slope=0.752

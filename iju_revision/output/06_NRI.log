@@ -1,0 +1,13 @@
+=========== R1-1: continuous NRI, 24-month OS ===========
+
+--- Adding MLR to IMDC+dNLR (does MLR add value beyond dNLR?) ---
+NRI=0.510 (n_event=46, n_nonevent=84)
+bootstrap median/95%CI: -0.01939541 0.5010682 0.8248271 
+
+--- Adding dNLR to IMDC+MLR (does dNLR add value beyond MLR?) ---
+NRI=0.670 (n_event=46, n_nonevent=84)
+bootstrap median/95%CI: -0.4666489 0.658168 0.9890326 
+
+--- IDI (integrated discrimination improvement), same comparisons ---
+IDI (MLR added to dNLR): 0.002364211 
+IDI (dNLR added to MLR): 0.02131531 
