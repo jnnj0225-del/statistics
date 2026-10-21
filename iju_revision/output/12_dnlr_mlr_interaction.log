@@ -1,0 +1,20 @@
+=========== Classification x regimen interaction tests (LRT), OS ===========
+
+--- IMDC-dNLR x regimen ---
+Analysis of Deviance Table
+ Cox model: response is  Surv(OS_time, death)
+ Model 1: ~ grp4_dnlr + regimen
+ Model 2: ~ grp4_dnlr * regimen
+   loglik  Chisq Df Pr(>|Chi|)
+1 -274.29                     
+2 -273.98 0.6301  3     0.8895
+
+--- IMDC-MLR x regimen ---
+Analysis of Deviance Table
+ Cox model: response is  Surv(OS_time, death)
+ Model 1: ~ grp4_mlr + regimen
+ Model 2: ~ grp4_mlr * regimen
+   loglik  Chisq Df Pr(>|Chi|)
+1 -272.51                     
+2 -272.31 0.3948  3     0.9413
+

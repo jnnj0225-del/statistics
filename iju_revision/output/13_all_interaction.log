@@ -1,0 +1,13 @@
+=========== Classification x regimen interaction tests (LRT), OS — all 8 candidate models ===========
+
+IMDC alone       chisq=0.119  df=1  p=0.7298  
+IMDC-NLR         chisq=3.213  df=3  p=0.3599  
+IMDC-dNLR        chisq=0.630  df=3  p=0.8895  
+IMDC-MLR         chisq=0.395  df=3  p=0.9413  
+IMDC-SIRI        chisq=0.386  df=3  p=0.9431  
+IMDC-CRP         chisq=8.537  df=3  p=0.0361  *
+Warning message:
+In coxph.fit(X, Y, istrat, offset, init, control, weights = weights,  :
+  Loglik converged before variable  5 ; coefficient may be infinite. 
+IMDC-NLR-MLR     chisq=1.869  df=3  p=0.5999  
+IMDC-dNLR-MLR    chisq=0.956  df=3  p=0.8120  

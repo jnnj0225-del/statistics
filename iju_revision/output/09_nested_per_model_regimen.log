@@ -1,0 +1,29 @@
+ICI-ICI n = 104    ICI-TKI n = 88 
+
+=========== Regimen-stratified nested bootstrap: ICI-ICI (n=104) ===========
+
+IMDC alone     apparent C=0.6448  nested-corrected C=0.6442  95%CI [0.5556, 0.7340]  (ok=1000/1000)  elapsed=8s
+NLR            apparent C=0.6997  nested-corrected C=0.6674  95%CI [0.5896, 0.7509]  (ok=1000/1000)  elapsed=201s
+dNLR           apparent C=0.7044  nested-corrected C=0.6686  95%CI [0.5866, 0.7459]  (ok=1000/1000)  elapsed=397s
+MLR            apparent C=0.6944  nested-corrected C=0.6608  95%CI [0.5746, 0.7350]  (ok=1000/1000)  elapsed=584s
+SIRI           apparent C=0.6981  nested-corrected C=0.6626  95%CI [0.5762, 0.7435]  (ok=1000/1000)  elapsed=773s
+PIV            apparent C=0.6936  nested-corrected C=0.6590  95%CI [0.5764, 0.7374]  (ok=1000/1000)  elapsed=963s
+CRP            apparent C=0.6975  nested-corrected C=0.6633  95%CI [0.5815, 0.7343]  (ok=1000/1000)  elapsed=1122s
+NLR+MLR        apparent C=0.6940  nested-corrected C=0.6599  95%CI [0.5782, 0.7414]  (ok=1000/1000)  elapsed=1492s
+dNLR+MLR       apparent C=0.7262  nested-corrected C=0.6955  95%CI [0.6170, 0.7711]  (ok=1000/1000)  elapsed=1874s
+There were 50 or more warnings (use warnings() to see the first 50)
+
+=========== Regimen-stratified nested bootstrap: ICI-TKI (n=88) ===========
+
+IMDC alone     apparent C=0.5890  nested-corrected C=0.5816  95%CI [0.4751, 0.6756]  (ok=1000/1000)  elapsed=6s
+NLR            apparent C=0.6433  nested-corrected C=0.5933  95%CI [0.4915, 0.6886]  (ok=1000/1000)  elapsed=166s
+dNLR           apparent C=0.6450  nested-corrected C=0.5982  95%CI [0.4797, 0.7088]  (ok=1000/1000)  elapsed=330s
+MLR            apparent C=0.6965  nested-corrected C=0.6515  95%CI [0.5413, 0.7589]  (ok=1000/1000)  elapsed=496s
+SIRI           apparent C=0.6351  nested-corrected C=0.5823  95%CI [0.4820, 0.6765]  (ok=1000/1000)  elapsed=659s
+PIV            apparent C=0.6362  nested-corrected C=0.5858  95%CI [0.4809, 0.6857]  (ok=1000/1000)  elapsed=820s
+CRP            apparent C=0.7287  nested-corrected C=0.6908  95%CI [0.5894, 0.7712]  (ok=1000/1000)  elapsed=953s
+NLR+MLR        apparent C=0.7135  nested-corrected C=0.6706  95%CI [0.5698, 0.7595]  (ok=1000/1000)  elapsed=1262s
+dNLR+MLR       apparent C=0.7089  nested-corrected C=0.6700  95%CI [0.5723, 0.7646]  (ok=1000/1000)  elapsed=1577s
+There were 50 or more warnings (use warnings() to see the first 50)
+
+saved nested_per_model_regimen_result.rds

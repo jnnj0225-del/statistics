@@ -1,0 +1,16 @@
+=========== Bootstrap 95% CI for cutoff values (24-month OS, time-dependent ROC, B=1000) ===========
+
+  ... 200 / 500  elapsed: 597.3 s
+  ... 400 / 500  elapsed: 1184 s
+
+Results:
+NLR   original cutoff=2.5000  bootstrap median=3.5652  95%CI [2.5000, 4.7483]  (n_ok=500/500)
+dNLR  original cutoff=2.2895  bootstrap median=2.2895  95%CI [1.5705, 3.0819]  (n_ok=500/500)
+MLR   original cutoff=0.3769  bootstrap median=0.3823  95%CI [0.2825, 0.6306]  (n_ok=500/500)
+PLR   original cutoff=168.7500  bootstrap median=192.1569  95%CI [113.8365, 502.0689]  (n_ok=500/500)
+SII   original cutoff=634.5180  bootstrap median=646.7000  95%CI [484.4074, 1448.2313]  (n_ok=500/500)
+SIRI  original cutoff=1.5763  bootstrap median=1.5763  95%CI [1.2380, 4.0231]  (n_ok=500/500)
+PIV   original cutoff=477.2250  bootstrap median=477.2250  95%CI [396.6320, 676.8000]  (n_ok=500/500)
+CRP   original cutoff=4.0000  bootstrap median=4.0000  95%CI [3.4000, 18.3000]  (n_ok=500/500)
+
+saved cutoff_bootstrap_ci.rds

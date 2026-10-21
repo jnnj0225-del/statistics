@@ -1,0 +1,38 @@
+
+=========== Full-pipeline nested bootstrap: ICI-ICI  (n= 104 ) ===========
+
+Pipeline on this group's own data selected: dNLR  apparent C= 0.7044 
+  ... 200 / 1000  elapsed: 308.4 s
+  ... 400 / 1000  elapsed: 616.4 s
+  ... 600 / 1000  elapsed: 915.5 s
+  ... 800 / 1000  elapsed: 1213.4 s
+  ... 1000 / 1000  elapsed: 1514.2 s
+failed resamples: 0 of 1000 
+Selection frequency:
+selected
+     dNLR  dNLR_MLR       CRP       MLR       PIV      SIRI       NLR IMDC_only 
+      248       216       163       132        72        67        52        32 
+  NLR_MLR       SII       PLR 
+       12         5         1 
+Nested optimism-corrected C-index: 0.6493  95%CI [0.5706, 0.7232]
+There were 50 or more warnings (use warnings() to see the first 50)
+
+=========== Full-pipeline nested bootstrap: ICI-TKI  (n= 88 ) ===========
+
+Pipeline on this group's own data selected: CRP  apparent C= 0.7287 
+  ... 200 / 1000  elapsed: 254.7 s
+  ... 400 / 1000  elapsed: 508.9 s
+  ... 600 / 1000  elapsed: 762.2 s
+  ... 800 / 1000  elapsed: 1020 s
+  ... 1000 / 1000  elapsed: 1273.6 s
+failed resamples: 0 of 1000 
+Selection frequency:
+selected
+      CRP       MLR  dNLR_MLR   NLR_MLR       PIV      dNLR      SIRI       NLR 
+      538       140       121        52        38        34        30        25 
+      PLR       SII IMDC_only 
+        8         8         6 
+Nested optimism-corrected C-index: 0.6635  95%CI [0.5569, 0.7513]
+There were 50 or more warnings (use warnings() to see the first 50)
+
+saved full_pipeline_regimen_result.rds

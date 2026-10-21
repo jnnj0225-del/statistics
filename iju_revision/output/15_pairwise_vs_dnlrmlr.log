@@ -1,0 +1,10 @@
+=========== Pairwise bootstrap: IMDC-dNLR-MLR vs each other candidate model (B=1000) ===========
+
+IMDC-dNLR-MLR (0.7182) vs IMDC alone     (0.6216): mean diff=+0.0909  95%CI [+0.0803, +0.0966]  *
+IMDC-dNLR-MLR (0.7182) vs IMDC-NLR       (0.6727): mean diff=+0.0456  95%CI [+0.0284, +0.0574]  *
+IMDC-dNLR-MLR (0.7182) vs IMDC-dNLR      (0.6890): mean diff=+0.0323  95%CI [+0.0129, +0.0742]  *
+IMDC-dNLR-MLR (0.7182) vs IMDC-MLR       (0.6889): mean diff=+0.0309  95%CI [+0.0130, +0.0827]  *
+IMDC-dNLR-MLR (0.7182) vs IMDC-SIRI      (0.6646): mean diff=+0.0525  95%CI [+0.0337, +0.0896]  *
+IMDC-dNLR-MLR (0.7182) vs IMDC-CRP       (0.6954): mean diff=+0.0254  95%CI [+0.0065, +0.0687]  *
+IMDC-dNLR-MLR (0.7182) vs IMDC-NLR-MLR   (0.6842): mean diff=+0.0327  95%CI [+0.0177, +0.0408]  *
+There were 50 or more warnings (use warnings() to see the first 50)

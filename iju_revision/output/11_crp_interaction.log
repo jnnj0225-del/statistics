@@ -1,0 +1,38 @@
+=========== Classification x regimen interaction tests (likelihood ratio test), OS ===========
+
+>>> Reference (already in manuscript): dNLR-MLR classification x regimen
+--- IMDC-dNLR-MLR x regimen ---
+Analysis of Deviance Table
+ Cox model: response is  Surv(OS_time, death)
+ Model 1: ~ grp4_dnlrmlr + regimen
+ Model 2: ~ grp4_dnlrmlr * regimen
+   loglik  Chisq Df Pr(>|Chi|)
+1 -269.19                     
+2 -268.71 0.9556  3      0.812
+
+>>> New: CRP classification x regimen
+--- IMDC-CRP x regimen ---
+Analysis of Deviance Table
+ Cox model: response is  Surv(OS_time, death)
+ Model 1: ~ grp4_crp + regimen
+ Model 2: ~ grp4_crp * regimen
+   loglik Chisq Df Pr(>|Chi|)  
+1 -271.85                      
+2 -267.58 8.537  3    0.03612 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Warning message:
+In coxph.fit(X, Y, istrat, offset, init, control, weights = weights,  :
+  Loglik converged before variable  5 ; coefficient may be infinite. 
+
+=========== For context: CRP vs dNLR-MLR, apparent C-index within ICI-TKI only (n=88) ===========
+Warning message:
+In coxph.fit(X, Y, istrat, offset, init, control, weights = weights,  :
+  Loglik converged before variable  1 ; coefficient may be infinite. 
+apparent C, dNLR-MLR (ICI-TKI only): 0.7138 
+apparent C, CRP (ICI-TKI only): 0.7238 
+There were 50 or more warnings (use warnings() to see the first 50)
+
+Paired bootstrap (within ICI-TKI only, B=1000): dNLR-MLR minus CRP
+  mean diff=-0.0228  95% CI: -0.0915 to 0.0184
