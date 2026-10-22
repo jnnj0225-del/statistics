@@ -1,0 +1,13 @@
+=========== Nested + paired bootstrap: IMDC-dNLR-MLR vs each of 8 other candidates (B=500) ===========
+
+IMDC-dNLR-MLR    vs IMDC alone     : mean diff=+0.0720  95%CI [+0.0253, +0.0966]  (ok=500/500)  elapsed=390s  *
+IMDC-dNLR-MLR    vs IMDC-NLR       : mean diff=+0.0289  95%CI [-0.0191, +0.0662]  (ok=500/500)  elapsed=585s  
+IMDC-dNLR-MLR    vs IMDC-dNLR      : mean diff=+0.0289  95%CI [-0.0080, +0.0739]  (ok=500/500)  elapsed=584s  
+IMDC-dNLR-MLR    vs IMDC-MLR       : mean diff=+0.0208  95%CI [-0.0179, +0.0602]  (ok=500/500)  elapsed=579s  
+IMDC-dNLR-MLR    vs IMDC-SIRI      : mean diff=+0.0385  95%CI [-0.0068, +0.0820]  (ok=500/500)  elapsed=567s  
+IMDC-dNLR-MLR    vs IMDC-PIV       : mean diff=+0.0468  95%CI [+0.0023, +0.0942]  (ok=500/500)  elapsed=552s  *
+IMDC-dNLR-MLR    vs IMDC-CRP       : mean diff=+0.0132  95%CI [-0.0330, +0.0652]  (ok=500/500)  elapsed=540s  
+IMDC-dNLR-MLR    vs IMDC-NLR-MLR   : mean diff=+0.0201  95%CI [-0.0198, +0.0531]  (ok=500/500)  elapsed=721s  
+There were 50 or more warnings (use warnings() to see the first 50)
+
+saved nested_paired_vs_dnlrmlr_result.rds

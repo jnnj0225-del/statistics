@@ -1,0 +1,4 @@
+=========== Apparent-level pairwise bootstrap: IMDC-dNLR-MLR vs IMDC-PIV (B=1000) ===========
+
+IMDC-dNLR-MLR (0.7182) vs IMDC-PIV       (0.6620): mean diff=+0.0606  95%CI [+0.0399, +0.1031]  *
+There were 23 warnings (use warnings() to see them)

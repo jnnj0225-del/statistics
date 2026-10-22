@@ -1,0 +1,5 @@
+=========== Nested bootstrap C-index, IMDC-ALC (median cutoff re-derived per resample, B=1000) ===========
+
+IMDC-ALC    apparent C=0.6638  nested-corrected C=0.6514  95%CI [0.5808, 0.7157]  (ok=1000/1000)
+
+saved alc_nested_result.rds
