@@ -1,0 +1,10 @@
+=========== Nested paired bootstrap: IMDC-dNLR-MLR vs IMDC-ALC (B=1000) ===========
+
+  ... 200 / 1000  elapsed: 137.7 s
+  ... 400 / 1000  elapsed: 274 s
+  ... 600 / 1000  elapsed: 409.1 s
+  ... 800 / 1000  elapsed: 546.5 s
+  ... 1000 / 1000  elapsed: 681 s
+There were 25 warnings (use warnings() to see them)
+
+Paired difference (dNLR-MLR minus ALC), nested: mean=0.0405  95% CI: -0.0111 to 0.0996  (ok=1000/1000)

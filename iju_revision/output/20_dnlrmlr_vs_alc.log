@@ -1,0 +1,6 @@
+=========== IMDC-dNLR-MLR vs IMDC-ALC, apparent-level paired bootstrap (B=1000) ===========
+
+apparent C: dNLR-MLR=0.7182  ALC=0.6638  diff=0.0544
+There were 22 warnings (use warnings() to see them)
+
+Paired difference (dNLR-MLR minus ALC): mean=0.0589  95% CI: 0.0381 to 0.1167  failed=0/1000
