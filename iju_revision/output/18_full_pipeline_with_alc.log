@@ -1,0 +1,29 @@
+=========== Full-pipeline nested bootstrap WITH ALC as a 9th candidate marker (B=1000) ===========
+
+Original-data pipeline selected: dNLR_MLR  apparent C= 0.7182 
+  ... 100 / 1000  elapsed: 271 s
+  ... 200 / 1000  elapsed: 545.3 s
+  ... 300 / 1000  elapsed: 815.2 s
+  ... 400 / 1000  elapsed: 1083.3 s
+  ... 500 / 1000  elapsed: 1352.3 s
+  ... 600 / 1000  elapsed: 1619 s
+  ... 700 / 1000  elapsed: 1881.7 s
+  ... 800 / 1000  elapsed: 2145 s
+  ... 900 / 1000  elapsed: 2408.6 s
+  ... 1000 / 1000  elapsed: 2675.6 s
+There were 50 or more warnings (use warnings() to see the first 50)
+
+failed resamples: 0 of 1000 
+
+Selection frequency across resamples (with ALC included):
+selected
+ dNLR_MLR       CRP      dNLR       MLR   NLR_MLR       NLR      SIRI       PIV 
+      410       338        86        83        33        23        12         6 
+      ALC       PLR IMDC_only 
+        4         3         2 
+
+mean optimism (train - test): 0.0387  (n= 1000 )
+Apparent C-index of originally-selected model on full data: 0.7182 
+NESTED optimism-corrected C-index: 0.6795  95%CI [ 0.6126 , 0.7383 ]
+
+saved full_pipeline_with_alc_result.rds
